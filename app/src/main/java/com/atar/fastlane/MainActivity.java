@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         TextView tv = findViewById(R.id.textView1);
-        tv.setText("Build Type : "+BuildConfig.BUILD_TYPE +"\nFlavour : "+BuildConfig.FLAVOR);
+        tv.setText("Build Type : "+BuildConfig.BUILD_TYPE
+                +"\nFlavour : "+BuildConfig.FLAVOR
+                +"\n APPLICATION_ID : "+BuildConfig.APPLICATION_ID
+        );
     }
 }
