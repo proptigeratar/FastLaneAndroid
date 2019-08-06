@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         TextView tv = findViewById(R.id.textView1);
         tv.setText("Build Type : "+BuildConfig.BUILD_TYPE +"\nFlavour : "+BuildConfig.FLAVOR);
-        Log.d("atar", "MainActivity... onCreate()...");
-        System.out.println("atar MainActivity... onCreate()...");
+        Log.d("atar", "MainActivity...onCreate()...");
+        System.out.println("atar MainActivity...onCreate()...");
     }
 }
