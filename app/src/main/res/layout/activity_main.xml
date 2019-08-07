@@ -13,6 +13,7 @@
         android:id="@+id/editTextnum1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="Enter First Number"
         android:hint="Enter First Number" />
 
     <EditText
@@ -20,6 +21,7 @@
         android:id="@+id/editTextnum2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:contentDescription="Enter Second Number"
         android:hint="Enter Second Number" />
 
     <Button
@@ -27,18 +29,31 @@
         android:id="@+id/buttonAdd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add" />
+        android:contentDescription="Add"
+        android:text="Add"
+        />
 
     <Button
         android:layout_marginTop="24dp"
         android:id="@+id/buttonSubtract"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Subtract" />
+        android:text="Subtract"
+        android:contentDescription="Subtract"
+        />
     <Button
         android:layout_marginTop="24dp"
         android:id="@+id/buttonMul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Multiply" />
+        android:text="Multiply"
+        android:contentDescription="Multiply"
+        />
+
+    <TextView
+        android:layout_marginTop="24dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 </LinearLayout>

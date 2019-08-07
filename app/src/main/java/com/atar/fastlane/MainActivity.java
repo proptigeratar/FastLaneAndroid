@@ -19,10 +19,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        TextView tv = findViewById(R.id.textView1);
-//        tv.setText("Build Type : "+BuildConfig.BUILD_TYPE +"\nFlavour : "+BuildConfig.FLAVOR);
-//        Log.d("atar", "MainActivity...onCreate()...");
-//        System.out.println("atar MainActivity...onCreate()...");
+        TextView tv = findViewById(R.id.textView);
+        tv.setText("Build Type : "+BuildConfig.BUILD_TYPE +"\nFlavour : "+BuildConfig.FLAVOR);
+        Log.d("atar", "MainActivity...onCreate()...");
+        System.out.println("atar MainActivity...onCreate()...");
 
         num1 = findViewById(R.id.editTextnum1);
         num2 = findViewById(R.id.editTextnum2);
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 n1 = Integer.parseInt(num1.getText().toString());
                 n2 = Integer.parseInt(num2.getText().toString());
+
                 if(isValid()){
                     moveToNextScreen(n1,n2,(n1+n2));
                 }else{
@@ -72,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void moveToNextScreen(int n1, int n2, int i) {
+        num1.setText("");
+        num2.setText("");
       Intent intent = new Intent(this,ResultActivity.class);
       intent.putExtra("num1",n1);
       intent.putExtra("num2",n1);
